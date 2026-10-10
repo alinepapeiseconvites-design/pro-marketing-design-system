@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Design system da Pro Marketing: fundamentos, tokens e componentes para experiências digitais consistentes.">
+  <meta name="theme-color" content="#111111">
+  <title>Pro Marketing — Design System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar glass">
+    <a class="brand" href="#inicio" aria-label="Pro Marketing — início">
+      <span class="brand-mark" aria-hidden="true"><b>P</b><i>M</i></span>
+      <span>Pro Marketing <small>Design System</small></span>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a href="#fundamentos">Fundamentos</a>
+      <a href="#componentes">Componentes</a>
+      <a href="#aplicacoes">Aplicações</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Alternar tema" aria-pressed="false">
+      <span class="toggle-icon" aria-hidden="true">◐</span>
+      <span class="toggle-label">Escuro</span>
+    </button>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span> Pro Marketing · v1.0</div>
+        <h1>Clareza para criar.<br><em>Impulso para crescer.</em></h1>
+        <p>Um sistema visual para transformar estratégia em experiências digitais consistentes, ágeis e memoráveis.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#fundamentos">Explorar o sistema <span>↘</span></a>
+          <a class="button button-ghost" href="#componentes">Ver componentes</a>
+        </div>
+        <div class="principles" aria-label="Princípios da marca">
+          <span><b>01</b> Estratégico</span>
+          <span><b>02</b> Humano</span>
+          <span><b>03</b> Dinâmico</span>
+        </div>
+      </div>
+
+      <div class="hero-art reveal" aria-label="Logo da Pro Marketing">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="logo-window">
+          <div class="logo-from-pdf" role="img" aria-label="Logo Pro Marketing Digital extraído do arquivo oficial"></div>
+          <div class="logo-caption"><span>Marca principal</span><small>Fundo institucional</small></div>
+        </div>
+        <div class="floating-chip chip-top"><span class="status-dot"></span> Identidade em movimento</div>
+        <div class="floating-chip chip-bottom">↗ <span>Feito para escalar</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="fundamentos">
+      <div class="section-heading reveal">
+        <div><span class="kicker">01 · Fundamentos</span><h2>Uma base simples.<br>Possibilidades amplas.</h2></div>
+        <p>A identidade equilibra energia e precisão. O laranja conduz a ação; preto e branco sustentam legibilidade, contraste e sofisticação.</p>
+      </div>
+
+      <div class="color-grid reveal">
+        <article class="color-card color-orange" data-copy="#E88A00" tabindex="0">
+          <span>Primária</span><strong>Pro Orange</strong><code>#E88A00</code><button aria-label="Copiar cor Pro Orange">Copiar</button>
+        </article>
+        <article class="color-card color-ink" data-copy="#141414" tabindex="0">
+          <span>Base escura</span><strong>Deep Ink</strong><code>#141414</code><button aria-label="Copiar cor Deep Ink">Copiar</button>
+        </article>
+        <article class="color-card color-snow" data-copy="#F7F7F5" tabindex="0">
+          <span>Base clara</span><strong>Soft Snow</strong><code>#F7F7F5</code><button aria-label="Copiar cor Soft Snow">Copiar</button>
+        </article>
+        <article class="color-card color-mist" data-copy="#A6A6A1" tabindex="0">
+          <span>Suporte</span><strong>Quiet Mist</strong><code>#A6A6A1</code><button aria-label="Copiar cor Quiet Mist">Copiar</button>
+        </article>
+      </div>
+
+      <div class="foundation-grid">
+        <article class="type-panel panel reveal">
+          <div class="panel-label"><span>Tipografia</span><small>System Sans</small></div>
+          <div class="type-sample"><span>Aa</span><div><strong>Clara por natureza.</strong><p>-apple-system · Inter · sans-serif</p></div></div>
+          <div class="type-scale"><span>Display / 64</span><span>Heading / 40</span><span>Body / 16</span><span>Label / 12</span></div>
+        </article>
+        <article class="radius-panel panel reveal">
+          <div class="panel-label"><span>Forma & superfície</span><small>Suave e tátil</small></div>
+          <div class="shape-stage">
+            <div class="shape shape-one">12</div><div class="shape shape-two">20</div><div class="shape shape-three">32</div>
+          </div>
+          <p>Bordas progressivas, sombras discretas e transparência contextual.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section components-section" id="componentes">
+      <div class="section-heading reveal">
+        <div><span class="kicker">02 · Componentes</span><h2>Consistência que<br>se percebe no toque.</h2></div>
+        <p>Elementos com hierarquia nítida, estados acessíveis e movimento com propósito — prontos para interfaces claras e escuras.</p>
+      </div>
+
+      <div class="component-board reveal">
+        <div class="component-column">
+          <span class="component-title">Botões</span>
+          <div class="button-stack">
+            <button class="button button-primary">Começar agora <span>↗</span></button>
+            <button class="button button-secondary">Saiba mais</button>
+            <button class="button button-ghost">Ação terciária</button>
+          </div>
+          <span class="component-title">Controles</span>
+          <label class="switch-row"><span>Campanha ativa<small>Notificações habilitadas</small></span><input type="checkbox" checked><i></i></label>
+          <label class="switch-row"><span>Modo inteligente<small>Otimização automática</small></span><input type="checkbox"><i></i></label>
+        </div>
+
+        <div class="component-column">
+          <span class="component-title">Formulário</span>
+          <label class="field"><span>Nome da campanha</span><input type="text" value="Lançamento de primavera" aria-label="Nome da campanha"></label>
+          <label class="field"><span>Objetivo</span><select aria-label="Objetivo"><option>Reconhecimento de marca</option><option>Conversões</option><option>Engajamento</option></select></label>
+          <div class="segmented" role="group" aria-label="Período"><button class="active">7 dias</button><button>30 dias</button><button>90 dias</button></div>
+        </div>
+
+        <div class="component-column notification-demo">
+          <span class="component-title">Feedback</span>
+          <div class="toast"><span class="toast-icon">✓</span><div><strong>Campanha publicada</strong><p>Tudo pronto para começar.</p></div><button aria-label="Fechar">×</button></div>
+          <div class="mini-metric"><div><span>Alcance</span><strong>24,8 mil</strong></div><span class="trend">+18,4%</span><svg viewBox="0 0 220 70" role="img" aria-label="Tendência positiva"><path d="M4 58 C35 55 40 44 65 48 S95 53 115 32 S150 41 172 18 S198 22 216 7" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M4 58 C35 55 40 44 65 48 S95 53 115 32 S150 41 172 18 S198 22 216 7 L216 70 L4 70Z" fill="url(#fade)"/><defs><linearGradient id="fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="currentColor" stop-opacity=".24"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs></svg></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="aplicacoes">
+      <div class="section-heading reveal">
+        <div><span class="kicker">03 · Aplicações</span><h2>Da estratégia<br>para a tela.</h2></div>
+        <p>Exemplos conceituais de como o sistema organiza informação, evidencia oportunidades e mantém a marca presente sem competir com o conteúdo.</p>
+      </div>
+
+      <div class="application-grid">
+        <article class="dashboard panel reveal">
+          <div class="dashboard-top"><div><span>Visão geral</span><h3>Performance</h3></div><button class="icon-button" aria-label="Mais opções">•••</button></div>
+          <div class="dashboard-tabs"><button class="active">Campanhas</button><button>Conteúdo</button><button>Conversões</button></div>
+          <div class="metrics">
+            <div><span>Investimento</span><strong>R$ 18.240</strong><small>↑ 8,2%</small></div>
+            <div><span>Conversões</span><strong>1.842</strong><small>↑ 12,6%</small></div>
+            <div><span>Custo / resultado</span><strong>R$ 9,90</strong><small class="neutral">Meta atingida</small></div>
+          </div>
+          <div class="bars" aria-label="Gráfico demonstrativo de desempenho"><i style="--h:34%"></i><i style="--h:47%"></i><i style="--h:40%"></i><i style="--h:65%"></i><i style="--h:57%"></i><i style="--h:82%"></i><i style="--h:72%"></i><i class="accent" style="--h:94%"></i><i style="--h:78%"></i><i style="--h:88%"></i><i style="--h:70%"></i><i style="--h:86%"></i></div>
+        </article>
+
+        <article class="campaign-card reveal">
+          <div class="campaign-art"><span>PM</span><div class="swoosh"></div><small>IDEIAS QUE<br>GANHAM ESPAÇO</small></div>
+          <div class="campaign-body"><div><span class="pill">Social · Conceito</span><h3>Movimento com direção.</h3><p>Um exemplo de composição editorial que une força, simplicidade e ritmo.</p></div><button class="round-button" aria-label="Abrir exemplo">↗</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="closing reveal">
+      <span class="kicker">Pronto para crescer</span>
+      <h2>Uma marca consistente<br>em cada ponto de contato.</h2>
+      <a class="button button-primary" href="#inicio">Voltar ao início <span>↑</span></a>
+      <div class="closing-mark"><b>P</b><i>M</i></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Pro Marketing · Design System v1.0</span>
+    <span>Energia para ideias que avançam.</span>
+    <a href="#inicio">Topo ↑</a>
+  </footer>
+
+  <div class="copy-toast" role="status" aria-live="polite">Cor copiada</div>
+  <script src="script.js"></script>
+</body>
+</html>
